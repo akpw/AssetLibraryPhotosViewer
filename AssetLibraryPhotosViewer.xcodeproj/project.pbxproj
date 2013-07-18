@@ -90,7 +90,6 @@
 		57006DEF17980A1500FDF535 = {
 			isa = PBXGroup;
 			children = (
-				57006E3617980F2A00FDF535 /* AssetsLibrary.framework */,
 				57006E0117980A1500FDF535 /* AssetLibraryPhotosViewer */,
 				57006E2517980A1500FDF535 /* AssetLibraryPhotosViewerTests */,
 				57006DFA17980A1500FDF535 /* Frameworks */,
@@ -110,6 +109,7 @@
 		57006DFA17980A1500FDF535 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57006E3617980F2A00FDF535 /* AssetsLibrary.framework */,
 				57006DFB17980A1500FDF535 /* UIKit.framework */,
 				57006DFD17980A1500FDF535 /* Foundation.framework */,
 				57006DFF17980A1500FDF535 /* CoreGraphics.framework */,

@@ -20,12 +20,16 @@ typedef NS_ENUM(NSUInteger, ImageFormats) {
 
 @implementation ViewController
 
+#pragma mark -
+#pragma mark - Initialization
 - (NSMutableArray *)imagesURLArray {
     if (!_imagesURLArray) {
         _imagesURLArray = [[NSMutableArray alloc] init];
     }
     return _imagesURLArray;
 }
+
+#pragma mark - AssetsLibrary stuff
 - (void)accessAssetsLibraryPhotosWithCompletionBlock:(void(^)())completionBlock {
     ALAssetsLibrary* assetLibrary = [[ALAssetsLibrary alloc] init];
     ALAssetsLibraryGroupsEnumerationResultsBlock libGroupEnumerationResult = ^(ALAssetsGroup *group, BOOL *stop) {
@@ -97,6 +101,7 @@ typedef NS_ENUM(NSUInteger, ImageFormats) {
 }
 
 
+#pragma mark - view lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     _stepper.enabled = NO;
@@ -107,8 +112,6 @@ typedef NS_ENUM(NSUInteger, ImageFormats) {
         _stepper.maximumValue = [self.imagesURLArray count] - 1;
     }];
 }
-
-
 - (IBAction)stepperValueChanged:(id)sender {
     UIStepper *stepper = (UIStepper *)sender;
     NSUInteger stepperValue = stepper.value;
@@ -126,24 +129,3 @@ typedef NS_ENUM(NSUInteger, ImageFormats) {
 
 
 @end
-/*
- CGImageRef iref = [rep fullScreenImage];
- if (iref) {
- UIImage *image = [UIImage imageWithCGImage:iref scale:rep.scale
- orientation:(UIImageOrientation)rep.orientation];
- dispatch_async(dispatch_get_main_queue(), ^{
- [self.imageView setImage:image];
- [self.imagesArray addObject:image];
- });
- }
-
- CGImageRef iref = [asset thumbnail];
- if (iref) {
- UIImage *image = [UIImage imageWithCGImage:iref];
- dispatch_async(dispatch_get_main_queue(), ^{
- [self.imagesArray addObject:image];
- });
- }
-
- 
- */
