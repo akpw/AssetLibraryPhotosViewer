@@ -119,20 +119,20 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">stepper</string>
+						<string key="label">navigationStepper</string>
 						<reference key="source" ref="372490531"/>
 						<reference key="destination" ref="930286969"/>
 					</object>
-					<int key="connectionID">27</int>
+					<int key="connectionID">29</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">stepperValueChanged:</string>
+						<string key="label">navigationStepperValueChanged:</string>
 						<reference key="source" ref="930286969"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">13</int>
 					</object>
-					<int key="connectionID">28</int>
+					<int key="connectionID">30</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -190,7 +190,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">28</int>
+			<int key="maxID">30</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -198,27 +198,27 @@
 					<string key="className">ViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">stepperValueChanged:</string>
+						<string key="NS.key.0">navigationStepperValueChanged:</string>
 						<string key="NS.object.0">id</string>
 					</object>
 					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">stepperValueChanged:</string>
+						<string key="NS.key.0">navigationStepperValueChanged:</string>
 						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">stepperValueChanged:</string>
+							<string key="name">navigationStepperValueChanged:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="imageView">UIImageView</string>
-						<string key="stepper">UIStepper</string>
+						<string key="navigationStepper">UIStepper</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="imageView">
 							<string key="name">imageView</string>
 							<string key="candidateClassName">UIImageView</string>
 						</object>
-						<object class="IBToOneOutletInfo" key="stepper">
-							<string key="name">stepper</string>
+						<object class="IBToOneOutletInfo" key="navigationStepper">
+							<string key="name">navigationStepper</string>
 							<string key="candidateClassName">UIStepper</string>
 						</object>
 					</dictionary>

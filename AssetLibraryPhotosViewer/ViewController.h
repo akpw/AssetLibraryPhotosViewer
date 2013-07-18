@@ -11,8 +11,8 @@
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
-@property (strong, nonatomic) IBOutlet UIStepper *stepper;
+@property (strong, nonatomic) IBOutlet UIStepper *navigationStepper;
 
-- (IBAction)stepperValueChanged:(id)sender;
+- (IBAction)navigationStepperValueChanged:(id)sender;
 
 @end
