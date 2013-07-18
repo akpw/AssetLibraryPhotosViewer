@@ -121,7 +121,10 @@ typedef NS_ENUM(NSUInteger, ImageFormats) {
     };
     
     NSURL *imageURL = (NSURL *)[self.imagesURLArray objectAtIndex:stepperValue];
-    [self assetLibraryProcessImageAtURL:imageURL ImageFormat:kImageThumbnail WithBlock:imageProcessingBlock];
+    [self assetLibraryProcessImageAtURL:imageURL ImageFormat:kImageFullScreen WithBlock:imageProcessingBlock];
+    
+    // for thumbnail image, use below
+    // [self assetLibraryProcessImageAtURL:imageURL ImageFormat:kImageThumbnail WithBlock:imageProcessingBlock];
 }
 
 
