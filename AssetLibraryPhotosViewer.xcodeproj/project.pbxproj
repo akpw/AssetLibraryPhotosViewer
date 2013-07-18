@@ -23,6 +23,7 @@
 		57006E2217980A1500FDF535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57006DFD17980A1500FDF535 /* Foundation.framework */; };
 		57006E2A17980A1500FDF535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57006E2817980A1500FDF535 /* InfoPlist.strings */; };
 		57006E2D17980A1500FDF535 /* AssetLibraryPhotosViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57006E2C17980A1500FDF535 /* AssetLibraryPhotosViewerTests.m */; };
+		57006E3717980F2A00FDF535 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57006E3617980F2A00FDF535 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		57006E2917980A1500FDF535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		57006E2B17980A1500FDF535 /* AssetLibraryPhotosViewerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssetLibraryPhotosViewerTests.h; sourceTree = "<group>"; };
 		57006E2C17980A1500FDF535 /* AssetLibraryPhotosViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssetLibraryPhotosViewerTests.m; sourceTree = "<group>"; };
+		57006E3617980F2A00FDF535 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57006E3717980F2A00FDF535 /* AssetsLibrary.framework in Frameworks */,
 				57006DFC17980A1500FDF535 /* UIKit.framework in Frameworks */,
 				57006DFE17980A1500FDF535 /* Foundation.framework in Frameworks */,
 				57006E0017980A1500FDF535 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +90,7 @@
 		57006DEF17980A1500FDF535 = {
 			isa = PBXGroup;
 			children = (
+				57006E3617980F2A00FDF535 /* AssetsLibrary.framework */,
 				57006E0117980A1500FDF535 /* AssetLibraryPhotosViewer */,
 				57006E2517980A1500FDF535 /* AssetLibraryPhotosViewerTests */,
 				57006DFA17980A1500FDF535 /* Frameworks */,
@@ -334,6 +338,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Arseniy Kuznetsov (FS7C2LRYG7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -349,6 +354,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "BF9654DC-3492-49F8-BB14-2ABCE2009FB0";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -365,6 +371,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Arseniy Kuznetsov (FS7C2LRYG7)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -373,6 +380,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "BF9654DC-3492-49F8-BB14-2ABCE2009FB0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -453,6 +461,7 @@
 				57006E3217980A1500FDF535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57006E3317980A1500FDF535 /* Build configuration list for PBXNativeTarget "AssetLibraryPhotosViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +470,7 @@
 				57006E3517980A1500FDF535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
