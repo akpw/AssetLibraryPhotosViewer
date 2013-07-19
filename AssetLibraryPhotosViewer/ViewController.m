@@ -118,10 +118,13 @@ typedef NS_ENUM(NSUInteger, ImageFormats) {
 
     // the navigation stepper will be set & enabled after processing images URL
     _navigationStepper.enabled = NO;
+    
     [self fetchAssetsLibraryPhotosURLWithCompletionBlock:^{
-        _navigationStepper.enabled = YES;
-        _navigationStepper.minimumValue = 0;
-        _navigationStepper.maximumValue = [self.imagesURLArray count] - 1;
+        NSUInteger imagesCount = [self.imagesURLArray count];
+        if (imagesCount > 1) {
+            _navigationStepper.enabled = YES;           
+            _navigationStepper.maximumValue = imagesCount - 1;
+        }
     }];
 }
 
